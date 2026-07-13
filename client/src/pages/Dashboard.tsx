@@ -25,13 +25,21 @@ export default function Dashboard() {
       {/* Main content */}
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         {/* Welcome */}
-        <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900">
-            Welcome, {user?.name || 'User'}
-          </h2>
-          <p className="mt-1 text-sm text-gray-500">
-            Manage your social media content from one place.
-          </p>
+        <div className="mb-8 flex items-center justify-between">
+          <div>
+            <h2 className="text-2xl font-semibold text-gray-900">
+              Welcome, {user?.name || 'User'}
+            </h2>
+            <p className="mt-1 text-sm text-gray-500">
+              Manage your social media content from one place.
+            </p>
+          </div>
+          <a
+            href="/create"
+            className="inline-flex items-center rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          >
+            + Create Post
+          </a>
         </div>
 
         {/* Stats cards */}

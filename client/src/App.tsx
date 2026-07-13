@@ -3,6 +3,7 @@ import { useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import CreatePost from './pages/CreatePost';
 import Loading from './components/ui/Loading';
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
@@ -47,6 +48,14 @@ export default function App() {
         element={
           <PrivateRoute>
             <Dashboard />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/create"
+        element={
+          <PrivateRoute>
+            <CreatePost />
           </PrivateRoute>
         }
       />
