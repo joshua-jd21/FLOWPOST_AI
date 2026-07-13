@@ -1,0 +1,27 @@
+{
+  "name": "flowpost-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FlowPost AI — Unified social media management platform",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm -w server run dev",
+    "dev:client": "npm -w client run dev",
+    "build": "npm -w server run build && npm -w client run build",
+    "lint": "npm -w server run lint && npm -w client run lint",
+    "typecheck": "npm -w server run typecheck && npm -w client run typecheck",
+    "check": "npm run lint && npm run typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "allowScripts": {
+    "bcrypt@5.1.1": true,
+    "esbuild@0.28.1": true,
+    "esbuild@0.25.12": true
+  }
+}
