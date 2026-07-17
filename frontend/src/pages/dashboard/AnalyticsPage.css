@@ -1,0 +1,180 @@
+.analytics-refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 10px 15px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.105), rgba(255, 255, 255, 0.035)),
+    rgba(15, 15, 23, 0.68);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 820;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 18px 42px rgba(0, 0, 0, 0.22);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.analytics-refresh-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.analytics-refresh-btn path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.analytics-refresh-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  border-color: rgba(167, 139, 250, 0.34);
+  background:
+    linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(124, 58, 237, 0.16), rgba(236, 72, 153, 0.12)),
+    rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 24px 54px rgba(79, 70, 229, 0.22);
+}
+
+.analytics-refresh-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.68;
+}
+
+.analytics-empty-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
+  gap: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 26px;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(96, 165, 250, 0.16), transparent 32%),
+    radial-gradient(circle at 88% 20%, rgba(236, 72, 153, 0.12), transparent 28%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025)),
+    rgba(15, 15, 23, 0.78);
+  box-shadow: var(--soft-shadow);
+}
+
+.analytics-empty-hero h3,
+.future-analytics-card h3 {
+  margin: 8px 0;
+  color: white;
+  font-size: 1.35rem;
+}
+
+.analytics-empty-hero p,
+.future-analytics-card p {
+  margin: 0;
+  color: var(--muted-strong);
+  line-height: 1.65;
+}
+
+.analytics-empty-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.analytics-empty-actions span,
+.future-analytics-grid span {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 16px;
+  padding: 12px 13px;
+  background: rgba(255, 255, 255, 0.055);
+  color: #e6edf7;
+  font-size: 0.9rem;
+}
+
+.analytics-kpi.is-empty h3 {
+  max-width: 160px;
+  color: #e2e8f0;
+  font-size: 1.25rem;
+  line-height: 1.15;
+}
+
+.analytics-kpi.has-data h3 {
+  background: linear-gradient(90deg, #fff, #bfdbfe, #fbcfe8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.analytics-empty-state {
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+  padding: 26px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.12), transparent 36%),
+    rgba(255, 255, 255, 0.04);
+  text-align: center;
+}
+
+.analytics-empty-state.compact {
+  min-height: 150px;
+}
+
+.analytics-empty-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.18), rgba(167, 139, 250, 0.16), rgba(236, 72, 153, 0.12));
+  color: white;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.analytics-empty-state strong {
+  color: white;
+  font-size: 1rem;
+}
+
+.analytics-empty-state p {
+  max-width: 340px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.future-analytics-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 18px;
+  align-items: center;
+}
+
+.future-analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .analytics-empty-hero,
+  .future-analytics-card {
+    grid-template-columns: 1fr;
+  }
+
+  .future-analytics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .future-analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}

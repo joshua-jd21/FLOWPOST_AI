@@ -1,0 +1,132 @@
+.
+├── .gitignore
+├── .prettierrc
+├── backend
+│   ├── .env
+│   ├── .env.example
+│   ├── eslint.config.js
+│   ├── package.json
+│   ├── src
+│   │   ├── config
+│   │   │   └── db.ts
+│   │   ├── controllers
+│   │   │   ├── agent.controller.ts
+│   │   │   ├── ai.controller.ts
+│   │   │   ├── analytics.controller.ts
+│   │   │   ├── auth.controller.ts
+│   │   │   ├── automation.controller.ts
+│   │   │   ├── brand-kit.controller.ts
+│   │   │   ├── campaign.controller.ts
+│   │   │   ├── competitor.controller.ts
+│   │   │   ├── copilot.controller.ts
+│   │   │   ├── post.controller.ts
+│   │   │   ├── social.controller.ts
+│   │   │   └── user.controller.ts
+│   │   ├── index.ts
+│   │   ├── middleware
+│   │   │   ├── auth.middleware.ts
+│   │   │   └── validate.middleware.ts
+│   │   ├── models
+│   │   │   ├── agent-chat.model.ts
+│   │   │   ├── ai-history.model.ts
+│   │   │   ├── automation-workflow.model.ts
+│   │   │   ├── brand-kit.model.ts
+│   │   │   ├── campaign.model.ts
+│   │   │   ├── competitor.model.ts
+│   │   │   ├── connected-account.model.ts
+│   │   │   ├── copilot-chat.model.ts
+│   │   │   ├── post.model.ts
+│   │   │   ├── user-settings.model.ts
+│   │   │   └── user.model.ts
+│   │   ├── routes
+│   │   │   ├── agent.routes.ts
+│   │   │   ├── ai.routes.ts
+│   │   │   ├── analytics.routes.ts
+│   │   │   ├── auth.routes.ts
+│   │   │   ├── automation.routes.ts
+│   │   │   ├── brand-kit.routes.ts
+│   │   │   ├── campaign.routes.ts
+│   │   │   ├── competitor.routes.ts
+│   │   │   ├── copilot.routes.ts
+│   │   │   ├── post.routes.ts
+│   │   │   ├── protected.routes.ts
+│   │   │   ├── social.routes.ts
+│   │   │   └── user.routes.ts
+│   │   ├── services
+│   │   │   ├── agent.service.ts
+│   │   │   ├── ai.service.ts
+│   │   │   ├── analytics.service.ts
+│   │   │   ├── auth.service.ts
+│   │   │   ├── automation.service.ts
+│   │   │   ├── brand-kit.service.ts
+│   │   │   ├── campaign.service.ts
+│   │   │   ├── competitor.service.ts
+│   │   │   ├── copilot.service.ts
+│   │   │   ├── post.service.ts
+│   │   │   ├── social.service.ts
+│   │   │   ├── user.service.ts
+│   │   │   └── zernio.service.ts
+│   │   ├── utils
+│   │   │   ├── env.ts
+│   │   │   └── errors.ts
+│   │   └── validators
+│   │       ├── agent.validator.ts
+│   │       ├── ai.validator.ts
+│   │       ├── auth.validator.ts
+│   │       ├── automation.validator.ts
+│   │       ├── brand-kit.validator.ts
+│   │       ├── campaign.validator.ts
+│   │       ├── competitor.validator.ts
+│   │       ├── copilot.validator.ts
+│   │       ├── post.validator.ts
+│   │       ├── social.validator.ts
+│   │       └── user.validator.ts
+│   └── tsconfig.json
+├── docs
+│   ├── architecture.md
+│   ├── database-schema.md
+│   └── deployment.md
+├── frontend
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── public
+│   │   ├── favicon.svg
+│   │   └── icons.svg
+│   ├── README.md
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   ├── assets
+│   │   │   ├── hero.png
+│   │   │   ├── react.svg
+│   │   │   └── vite.svg
+│   │   ├── components
+│   │   │   ├── dashboard
+│   │   │   ├── PostPilotLogo.css
+│   │   │   └── PostPilotLogo.tsx
+│   │   ├── context
+│   │   │   └── AuthContext.tsx
+│   │   ├── index.css
+│   │   ├── main.tsx
+│   │   └── pages
+│   │       ├── AuthPage.css
+│   │       ├── AuthPage.tsx
+│   │       ├── dashboard
+│   │       ├── DashboardPage.tsx
+│   │       ├── DemoModePage.tsx
+│   │       └── LandingPage.tsx
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── package-lock.json
+├── package.json
+├── project_structure.txt
+├── README.md
+└── ROADMAP.md
+
+21 directories, 109 files

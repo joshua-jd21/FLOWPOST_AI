@@ -1,0 +1,110 @@
+.postpilot-logo {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 18px 42px rgba(124, 58, 237, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.postpilot-logo::after {
+  content: '';
+  position: absolute;
+  inset: -7px;
+  z-index: -1;
+  border-radius: 24px;
+  opacity: 0.58;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.24), rgba(124, 58, 237, 0.24), rgba(236, 72, 153, 0.18));
+  filter: blur(14px);
+}
+
+.postpilot-logo svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.brand-lockup:hover .postpilot-logo,
+.sidebar-brand:hover .postpilot-logo {
+  transform: translateY(-2px) scale(1.02);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 22px 54px rgba(124, 58, 237, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24);
+}
+
+.logo-arc {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.86);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.logo-arc {
+  opacity: 0.62;
+  stroke-width: 1.7;
+}
+
+.logo-arc.secondary {
+  opacity: 0.38;
+}
+
+.logo-glass-base {
+  fill: url(#postpilot-logo-gradient);
+}
+
+.logo-ambient-blue {
+  fill: rgba(56, 189, 248, 0.42);
+}
+
+.logo-ambient-pink {
+  fill: rgba(236, 72, 153, 0.38);
+}
+
+.logo-spark-main {
+  fill: rgba(255, 255, 255, 0.96);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
+}
+
+.logo-spark-cut {
+  fill: rgba(10, 10, 15, 0.28);
+}
+
+.logo-node,
+.logo-mini-node {
+  fill: #fff;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9));
+}
+
+.auth-showcase .postpilot-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 19px;
+}
+
+.dashboard-sidebar .postpilot-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 15px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .brand-lockup:hover .logo-spark-main,
+  .sidebar-brand:hover .logo-spark-main {
+    animation: postpilot-logo-pulse 900ms ease;
+  }
+}
+
+@keyframes postpilot-logo-pulse {
+  50% {
+    opacity: 0.82;
+    transform: scale(0.96);
+  }
+}
